@@ -38,7 +38,7 @@ class App extends Component {
 		} = this.state;
 
 		return (
-			<div className="app">
+			<React.Fragment>
 				<header>
 					<div className="brand">
 						<img
@@ -110,7 +110,7 @@ class App extends Component {
 						</tbody>
 					</table>
 				</div>
-			</div>
+			</React.Fragment>
 		);
 	}
 }
