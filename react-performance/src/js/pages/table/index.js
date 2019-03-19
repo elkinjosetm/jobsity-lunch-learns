@@ -38,17 +38,15 @@ class App extends Component {
 
 		return (
 			<React.Fragment>
-				<div className="filter">
-					<div className="form-group">
-						<label htmlFor="search">Search</label>
-						<input
-							id="search"
-							value={ searchQuery }
-							className="form-control"
-							placeholder="Search"
-							onChange={ this.onChange }
-						/>
-					</div>
+				<div className="form-group">
+					<label htmlFor="search">Search</label>
+					<input
+						id="search"
+						value={ searchQuery }
+						className="form-control"
+						placeholder="Search"
+						onChange={ this.onChange }
+					/>
 				</div>
 				<div className="container">
 					<table>

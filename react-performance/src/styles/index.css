@@ -14,6 +14,11 @@ header {
 	margin: 50px 0;
 }
 
+nav {
+	display: flex;
+	justify-content: center;
+}
+
 nav ul {
 	display: flex;
 	list-style-type: none;
@@ -31,7 +36,7 @@ nav ul li a {
 	padding: 10px 15px;
 	border-radius: 4px;
 	text-decoration: none;
-	transition: background-color .3s;
+	outline: none;
 }
 
 nav ul li a:hover {
@@ -74,20 +79,27 @@ tbody tr:hover { background-color:#f5f5f5; }
 	flex-direction: column;
 }
 
+.btn {
+	color: #ffffff;
+	background-color: #231f20;
+	border-radius: 4px;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 30px;
+	margin-left: 10px;
+	outline: none;
+}
+
 .brand {
 	display: flex;
 	justify-content: center;
 	pointer-events: none;
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 }
 
 .brand img {
 	pointer-events: none;
-}
-
-.filter {
-	display: flex;
-	justify-content: center;
 }
 
 .form-group {
@@ -122,4 +134,21 @@ tbody tr:hover { background-color:#f5f5f5; }
 
 .container {
 	width: 100%;
+}
+
+.perspective {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.perspective.row { flex-direction: row; }
+.perspective.column { flex-direction: column; }
+
+.box {
+	flex: 1;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid;
 }
