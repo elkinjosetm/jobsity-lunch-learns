@@ -14,6 +14,36 @@ header {
 	margin: 50px 0;
 }
 
+nav ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	margin: 0 10px;
+	border: none;
+}
+
+nav ul li a {
+	color: #0645AD;
+	padding: 10px 15px;
+	border-radius: 4px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+
+nav ul li a:hover {
+	color: #ffffff;
+	background-color: rgba(35, 31, 32, 0.3);
+}
+
+nav ul li a.active {
+	color: #ffffff;
+	background-color: #231f20;
+}
+
 label {
 	display: inline-block;
 	margin-bottom: 8px;
@@ -55,7 +85,14 @@ tbody tr:hover { background-color:#f5f5f5; }
 	pointer-events: none;
 }
 
+.filter {
+	display: flex;
+	justify-content: center;
+}
+
 .form-group {
+	width: 40%;
+	margin-bottom: 50px;
 }
 
 .form-control {
@@ -83,6 +120,6 @@ tbody tr:hover { background-color:#f5f5f5; }
 	margin: 0;
 }
 
-.table-container {
+.container {
 	width: 100%;
 }
