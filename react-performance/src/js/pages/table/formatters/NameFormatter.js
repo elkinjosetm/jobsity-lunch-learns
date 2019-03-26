@@ -3,14 +3,18 @@ import React, { Component } from 'react';
 class NameFormatter extends Component {
 	render() {
 		const {
-			firstName,
-			lastName,
+			data,
 		} = this.props;
 
 		return (
-			<span>
-				{ firstName } { lastName }
-			</span>
+			<React.Fragment>
+				<p>
+					{ data.first_name } { data.last_name }
+				</p>
+				<span>
+					{ data.index }
+				</span>
+			</React.Fragment>
 		);
 	}
 }

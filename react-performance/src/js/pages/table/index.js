@@ -70,8 +70,10 @@ class App extends Component {
 									</td>
 									<td>
 										<NameFormatter
-											firstName={ item.first_name }
-											lastName={ item.last_name }
+											data={ {
+												...item,
+												index,
+											} }
 										/>
 									</td>
 									<td>
@@ -86,9 +88,7 @@ class App extends Component {
 									</td>
 									<td>
 										<AddressFormatter
-											street={ item.street }
-											city={ item.city }
-											state={ item.state }
+											data={ item }
 										/>
 									</td>
 									<td>
